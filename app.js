@@ -8,8 +8,12 @@
 // function logGreeting(fn){
 //     fn(); //<-Ejecuta la función
 // }
-// logGreeting(greet);
-/*<- mandamos llamar la funcion colocando otra funcion en los parentesis pero si ingresamos otro tipo de dato fallara ya que la funcion solo ejecuta funciones*/
+// logGreeting(greet); /*<- mandamos llamar la funcion colocando otra funcion en los parentesis pero si ingresamos otro tipo de dato fallara ya que la funcion solo ejecuta funciones*/
+
+let greetMe = function () {
+  console.log("Hello from the function expression");
+};
+greetMe();
 
 let x = 2;
 console.log(
@@ -29,10 +33,27 @@ logGreeting(greet);
 let cuadrado = (x) => x * x; //En esta función recibe un dato y luego multiplica ese dato por si mismo
 console.log(`${cuadrado(5)}`);
 
+//Estas funciones ahora son reducidas para ocupar una menor cantidad de lineas de codigo
 logGreeting(function () {
   console.log(`Hola`);
-}); //Se ejecuta una funcion
-
+});
+//Estas dos son dos alternativas de la misma función
 logGreeting(() => {
   console.log(`hola`);
 });
+
+//Refactores de las primeras tres funciones
+let greet2 = () => {
+  console.log(`Hello`);
+};
+greet2();
+
+let logGreeting2 = (fn) => {
+  fn();
+};
+logGreeting2(greet2);
+
+let greetMe2 = () => {
+  console.log("Hello from the function expression");
+};
+greetMe2();
