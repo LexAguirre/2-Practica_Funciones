@@ -1,32 +1,33 @@
 ![Logo](img/ucol-logo.jpg)
 
-# Ejercicio 8: Inventario con listas enlazadas simples
+# Práctica 2: Funciones
 
 > Primera Parcial
 
 - FACULTAD DE TELEMATICA
 - INGENIERÍA EN SOFTWARE
-- “3ºG”
+- “4ºG”
 - ESTRUCTURA DE DATOS
-- CATEDRATICO: RAMIREZ GONZALEZ HUMBERTO
+- CATEDRATICO: ULIBARRI IRETA CARLOS
 - AGUIRRE ROMERO RAMÓN ALEJANDRO
 
 ## OBJETIVO
 
-Utilizando el mismo ejercicio de Inventario con que se ha venido trabajando se va a implementar un cambio en la estructura de datos para utilizar listas enlazadas simples, se va a considerar un ejemplo similar al primer ejercicio en donde los productos se acomodaban de acuerdo al orden en que llegaran (no es necesario ordenar) y por lo tanto si existe la opción de insertar un nuevo producto en determinada posición.
-Recordar que se deben usar por lo menos las clases del Producto, la del Inventario y la de la Aplicación (interacción con el DOM HTML)
+- First class functions:
+  Todo lo que puedes hacer con otros tipos de datos, puedes hacerlo con una función en Javascript, puedes pasarlas como parámetros, asignarlas a una variable, ponerlas dentro de un array e invocarlas
 
-> ENTREGA: MARTES 19 DE OCTUBRE DEL 2021
+-- Modifica el código en la forma en la que se te indica, una vez terminadas las modificaciones y comprobando que tu código funciona,agrega los cambios (git add .)
+-- Commitea los cambios (git commit -m “mensaje)
+-- Empuja los cambios (git push repoRemoto master)
+
+> ENTREGA: DOMINGO 06 DE FEBRERO DEL 2022
 
 ## EXPLICACIÓN DEL PROCESO
 
-Crear una interfaz en HTML para manipular un INVENTARIO de productos, para almacenar la información debemos usar un vector (no usar BDs ni local storage) y limitarlo a máximo 20 productos.
-La información de cada producto debe permitir guardar el código, el nombre, cantidad y el costo, además como propiedad calcular el valor de mercancía que sería un valor calculado por la cantidad y el costo.
+En su directorio de trabajo,
 
-En la interfaz (una sola pantalla) tener los inputs para cada dato, los botones para las tareas a realizar que se describen a continuación y un div para ir describiendo las actividades que se van realizando y sus resultados.
-Botones :
-Agregar nuevo producto
-Eliminar un producto por código, deberá devolver el producto (si existe) o null
-Buscar un producto por código
-Recuperar todos los productos //listar
-Recuperar todos los productos en orden inverso a como se ingresaron//listar inverso
+1. Crea una nueva rama en tu repositorio
+2. Crear un directorio llamado “first_class”
+3. Dentro de ese directorio crear uno llamado “funciones”
+4. Abrir el directorio “funciones” con visual studio code
+5. Crear un nuevo archivo llamado “app.js” y escribir los siguiente:
