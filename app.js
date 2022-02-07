@@ -34,26 +34,16 @@ let cuadrado = (x) => x * x; //En esta función recibe un dato y luego multiplic
 console.log(`${cuadrado(5)}`);
 
 //Estas funciones ahora son reducidas para ocupar una menor cantidad de lineas de codigo
-logGreeting(function () {
-  console.log(`Hola`);
-});
+logGreeting(function () {console.log(`Hola`);});
 //Estas dos son dos alternativas de la misma función
-logGreeting(() => {
-  console.log(`hola`);
-});
+logGreeting(() => {console.log(`hola`);});
 
 //Refactores de las primeras tres funciones
-let greet2 = () => {
-  console.log(`Hello`);
-};
+let greet2 = () => {console.log(`Hello`);};
 greet2();
 
-let logGreeting2 = (fn) => {
-  fn();
-};
+let logGreeting2 = (fn) => {fn();};
 logGreeting2(greet2);
 
-let greetMe2 = () => {
-  console.log("Hello from the function expression");
-};
+let greetMe2 = () => {console.log("Hello from the function expression");};
 greetMe2();
